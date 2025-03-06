@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Spring Boot WebSocket Chat Application</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+<noscript>
+    <h2>Sorry! Your browser doesn't support Javascript</h2>
+</noscript>
+
+<!--<div id="username-page">-->
+<!--    <div class="username-page-container">-->
+<!--        <h1 class="title">Type your username to enter the Chatroom</h1>-->
+<!--        <form id="usernameForm" name="usernameForm">-->
+<!--            <div class="form-group
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Spring Boot WebSocket Chat Application</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+<noscript>
+    <h2>Sorry! Your browser doesn't support Javascript</h2>
+</noscript>
+
+<div id="username-page">-->
+<!--    <div class="username-page-container">-->
+<!--        <h1 class="title">Type your username to enter the Chatroom</h1>-->
+<!--        <form id="usernameForm" name="usernameForm">-->
+<!--            <div class="form-group">-->
+<!--                <input type="text" id="name" placeholder="Username" autocomplete="off" class="form-control" />-->
+<!--            </div>-->
+<!--            <div class="form-group">-->
+<!--                <button type="submit" class="accent username-submit">Start Chatting</button>-->
+<!--            </div>-->
+<!--        </form>-->
+<!--    </div>-->
+<!--</div>-->
+<!-- -&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;-->
+<div id="username-page">
+
+    <div  class="container">
+        <!-- Left Side: Login Form -->
+        <div class="login-section">
+            <div class="login-header">
+                <header>Login</header>
+            </div>
+            <form id="loginForm" class="login-form">
+                <div class="input-box">
+                    <input type="text" class="input-field" id="username" placeholder="Email" autocomplete="off" required>
+                </div>
+                <div class="input-box">
+                    <input type="password" class="input-field" id="password" placeholder="Password" autocomplete="off" required>
+                </div>
+                <div class="forgot">
+                    <section>
+                        <input type="checkbox" id="check">
+                        <label for="check">Remember me</label>
+                    </section>
+                    <section>
+                        <a href="#">Forgot password</a>
+                    </section>
+                </div>
+                <div class="input-submit">
+                    <button type="submit" class="submit-btn" id="submit">Sign In</button>
+                </div>
+            </form>
+            <div class="sign-up-link">
+                <p>Don't have an account? <a href="/login.html">Sign Up</a></p>
+            </div>
+        </div>
+
+        <!-- Right Side: Owl Carousel -->
+        <div class="empty-section">
+            <div class="owl-carousel owl-theme">
+                <!-- Slide 1 -->
+                <div class="item">
+                    <img src="https://techhubindia.org/home/placement/Aniket_Patil_MeshBA_Solutions_LLP.jpg" alt="Aniket Patil">
+                </div>
+                <!-- Slide 2 -->
+                <div class="item">
+                    <img src="https://techhubindia.org/home/placement/Priya_Chougale_ValueMomentum_Software_Services_Pvt_Ltd.jpg" alt="Priya Chougale">
+                </div>
+                <!-- Slide 3 -->
+                <div class="item">
+                    <img src="https://techhubindia.org/home/placement/Abhijit_Deshmukh_Loylty_Rewardz_Management_Pvt_Ltd.jpg" alt="Abhijit Deshmukh">
+                </div>
+                <!-- Slide 4 -->
+                <div class="item">
+                    <img src="https://techhubindia.org/home/placement/Akash_Ashok_Gadkari_Marquardt_India_Pvt_Ltd.png" alt="Akash Gadkari">
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+<!--&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;-->
+
+<div id="chat-page" class="hidden">
+    <div class="chat-container">
+        <div class="chat-header">
+            <h2>GTechCoders</h2>
+        </div>
+        <div class="connecting">
+            Connecting...
+        </div>
+        <ul id="messageArea">
+
+        </ul>
+        <form id="messageForm" name="messageForm">
+            <div class="form-group">
+                <div class="input-group clearfix">
+                    <input type="text" id="message" placeholder="Type a message..." autocomplete="off" class="form-control"/>
+                    <button type="submit" class="primary">Send</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- jQuery (required for Owl Carousel) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<!-- Owl Carousel JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<!-- Initialize Owl Carousel -->
+<script>
+    $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            autoplayHoverPause: true,
+            responsive: {
+                0: {
+                    items: 2 // Show 2 items on all screen sizes
+                },
+                600: {
+                    items: 2 // Show 2 items on medium screens
+                },
+                1000: {
+                    items: 2 // Show 2 items on large screens
+                }
+            }
+        });
+    });
+    let signuplink = document.getElementsByClassName("sign-up-link");
+    signuplink.onclick = function(){
+
+    }
+
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sockjs-client/1.1.4/sockjs.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
